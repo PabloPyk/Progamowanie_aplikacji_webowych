@@ -48,5 +48,33 @@ function playSound(key) {
             kickSound.currentTime = 0;
             kickSound.play();
             break;
+        case 'b':
+            boomSound.currentTime = 0;
+            boomSound.play();
+            break;
+        case 'h':
+            hithatSound.currentTime = 0;
+            hithatSound.play();
+            break;
+        case 'o':
+            openhatSound.currentTime = 0;
+            openhatSound.play();
+            break;
+        case 'r':
+            rideSound.currentTime = 0;
+            rideSound.play();
+            break;
+        case 's':
+            snareSound.currentTime = 0;
+            snareSound.play();
+            break;
+        case 't':
+            tinkSound.currentTime = 0;
+            tinkSound.play();
+            break;
+        case 'i':
+            tomSound.currentTime = 0;
+            tomSound.play();
+            break;
     }
 }
