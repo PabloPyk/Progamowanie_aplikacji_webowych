@@ -6,6 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drumkit</title>
 </head>
+
+<style>
+    body{
+        background-color: rgb(180, 175, 175);
+    }
+    .pad {
+        width: 75px;
+        height: 100px;
+        background-color: rgb(76, 71, 73);
+        margin-left: 50px;
+        color: white;
+        margin-bottom: 20px;
+        
+    }
+    #top {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #record{
+        text-align: center;
+
+    }
+
+    #play {
+        text-align: center;
+    }
+
+    #reset {
+        text-align: center;
+    }
+
+    .recordBtn{
+        background-color: grey;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        min-width: 200px;
+        
+
+    }
+
+    .playBtn{
+        background-color: grey;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        min-width: 200px;
+
+    }
+
+    .reset{
+        background-color: grey;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        min-width: 200px;
+        margin-right: 10px;
+    }
+</style>
 <body>
     <audio src="sounds/clap.wav" data-sound="clap" data-key="a"></audio>
     <audio src="sounds/kick.wav" data-sound="kick" data-key="k"></audio>
@@ -16,7 +80,46 @@
     <audio src="sounds/snare.wav" data-sound="snare" data-key="s"></audio>
     <audio src="sounds/tink.wav" data-sound="tink" data-key="t"></audio>
     <audio src="sounds/tom.wav" data-sound="tom" data-key="i"></audio>
-    <button id="channel1Play">Play channel 1</button>
+
+    <div id="top">
+        <div id="top1">
+            <button id="padClap" class="pad">CLAP <br>"A"</br></button>
+            <button id="padKick" class="pad">KICK <br>"K"</br></button>
+            <button id="padBoom" class="pad">BOOM <br>"B"</br></button>
+        </div>
+        <div id="top2">
+            <button id="padHihat" class="pad">HITHAT <br>"H"</br></button>
+            <button id="padOpenhat" class="pad">OPENHAT <br>"O"</br></button>
+            <button id="padRide" class="pad">RIDE <br>"R"</br></button>
+        </div>
+        <div id="top3">
+            <button id="padSnare" class="pad">SNARE <br>"S"</br></button>
+            <button id="padTink" class="pad">TINK <br>"T"</br></button>
+            <button id="padTom" class="pad">TOM <br>"I"</br></button>
+        </div>
+        
+    </div>
+
+    <div id="record">
+        <button id="channel1Play" class="recordBtn">Kanał nagrywania 1</button>
+        <button id="channel2Play" class="recordBtn">Kanał nagrywania 2</button>
+        <button id="channel3Play" class="recordBtn">Kanał nagrywanial 3</button>
+        <button id="channel4Play" class="recordBtn">Kanał nagrywania 4</button>
+    </div>   
+
+    <div id="play">
+        <button id="btnPlay1" class="playBtn">Odtwórz kanał 1</button>
+        <button id="btnPlay2" class="playBtn">Odtwórz kanał 2</button>
+        <button id="btnPlay3" class="playBtn">Odtwórz kanał 3</button>
+        <button id="btnPlay4" class="playBtn">Odtwórz kanał 4</button>
+    </div>
+
+    <div id="reset">
+        <button id="resetBtn1" class="reset">Zresetuj kanał 1</button>
+        <button id="resetBtn2" class="reset">Zresetuj kanał 2</button>
+        <button id="resetBtn3" class="reset">Zresetuj kanał 3</button>
+        <button id="resetBtn4" class="reset">Zresetuj kanał 4</button>
+    </div>
     
     <script src="index.js"></script>
 </body>
