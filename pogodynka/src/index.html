@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" type="text/scss" href="main.scss" />
+    <title>Pogodynka</title>
+  </head>
+  <style>
+    body {
+      background-color: indianred;
+      
+    }
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      width: 1000px;
+      text-align: center;
+    }
+    h1 {
+      color: black;
+      font-size: xx-large;
+      
+    }
+    #enterCity {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      
+    }
+    #p1 {
+      font-size: 20px;
+    }
+    #button {
+      background-color: indianred;
+      text-align: center;
+      padding: 4px;
+      border-top-left-radius: 15px 10px;
+      border-top-right-radius: 15px 10px;
+      border-bottom-left-radius: 15px 10px;
+      border-bottom-right-radius: 15px 10px;
+      border-color: red;
+      
+    }
+    input {
+      background-color: indianred;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-top-left-radius: 15px 10px;
+      border-top-right-radius: 15px 10px;
+      border-bottom-left-radius: 15px 10px;
+      border-bottom-right-radius: 15px 10px;
+      border-color: red;
+    }
+  </style>
+
+  <body>
+    <main>
+      <div class="container">
+        <h1>Sprawdź pogodę dla swojej miejsowości</h1>
+        <div id="enterCity">
+          <p id="p1">Wpisz miasto:</p>
+          <input type="text" name="nazwa">
+          <button id="button">Dodaj</button>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
