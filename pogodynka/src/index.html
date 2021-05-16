@@ -3,66 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Stylesheet" type="text/scss" href="main.scss" />
     <title>Pogodynka</title>
   </head>
   <style>
-    body {
-      background-color: indianred;
-      
-    }
-    .container {
-      margin-right: auto;
-      margin-left: auto;
-      width: 1000px;
-      text-align: center;
-    }
-    h1 {
-      color: black;
-      font-size: xx-large;
-      
-    }
-    #enterCity {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-      
-    }
-    #p1 {
-      font-size: 20px;
-    }
-    #button {
-      background-color: indianred;
-      text-align: center;
-      padding: 4px;
-      border-top-left-radius: 15px 10px;
-      border-top-right-radius: 15px 10px;
-      border-bottom-left-radius: 15px 10px;
-      border-bottom-right-radius: 15px 10px;
-      border-color: red;
-      
-    }
-    input {
-      background-color: indianred;
-      margin-left: 20px;
-      margin-right: 20px;
-      border-top-left-radius: 15px 10px;
-      border-top-right-radius: 15px 10px;
-      border-bottom-left-radius: 15px 10px;
-      border-bottom-right-radius: 15px 10px;
-      border-color: red;
-    }
-  </style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list-element{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 10px;
+}
+
+
+    
+
+   .city-name{
+      font-size: 30px;
+
+     
+    }
+    p{
+        display: inline;
+      }
+  
+
+
+
+  </style>
   <body>
     <main>
-      <div class="container">
-        <h1>Sprawdź pogodę dla swojej miejsowości</h1>
-        <div id="enterCity">
-          <p id="p1">Wpisz miasto:</p>
-          <input type="text" name="nazwa">
-          <button id="button">Dodaj</button>
+      <h1>Weather app</h1>
+      
+      <form id="add-city-form">
+        <p>Podaj miasto:</p>
+        <input id="city-name" type="text">
+        <button id="add-button" type="submit">Dodaj</button>
+      </form>
+
+        <div class="city-list">
+          <div class="row">
+            <div class="list-element">
+              <div class="location">
+                <div class="city-name">Kraków</div>
+                <p>Icon</p>
+              </div>
+              <div class="temperature-degree">19 °C</div>
+              <div class="pressure-unit">1018 hPA</div>
+              <div class="humidity-level">40 %</div>
+            </div>
+            <div class="list-element">
+              <div class="location">
+                <div class="city-name">Kraków</div>
+                <p>Icon</p>
+              </div>
+              <div class="temperature-degree">19 °C</div>
+              <div class="pressure-unit">1018 hPA</div>
+              <div class="humidity-level">40 %</div>
+            </div>  
+            <div class="list-element">
+              <div class="location">
+                <div class="city-name">Kraków</div>
+                <p>Icon</p>
+              </div>
+              <div class="temperature-degree">19 °C</div>
+              <div class="pressure-unit">1018 hPA</div>
+              <div class="humidity-level">40 %</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="list-element">
+              <div class="location">
+                <div class="city-name">Kraków</div>
+                <p>Icon</p>
+              </div>
+              <div class="temperature-degree">19 °C</div>
+              <div class="pressure-unit">1018 hPA</div>
+              <div class="humidity-level">40 %</div>
+            </div>
+            <div class="list-element">
+              <div class="location">
+                <div class="city-name">Kraków</div>
+                <p>Icon</p>
+              </div>
+              <div class="temperature-degree">19 °C</div>
+              <div class="pressure-unit">1018 hPA</div>
+              <div class="humidity-level">40 %</div>
+            </div>  
+            <div class="list-element">
+              <div class="location">
+                <div class="city-name">Kraków</div>
+                <p>Icon</p>
+              </div>
+              <div class="temperature-degree">19 °C</div>
+              <div class="pressure-unit">1018 hPA</div>
+              <div class="humidity-level">40 %</div>
+            </div>
+          </div>
         </div>
+                 
       </div>
     </main>
     <script src="index.js"></script>

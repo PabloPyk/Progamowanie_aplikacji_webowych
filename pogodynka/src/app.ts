@@ -5,7 +5,7 @@ export class App {
     }
     async getCityInfo(city: string) {
         const weather = await this.getWeather('zakopane');
-        this.saveData(weather);
+        this.saveData(weather, city);
     }
     async getWeather(city: string): Promise<any> {
         const openWeatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${this.opwApiKey}`;
@@ -14,8 +14,21 @@ export class App {
         console.log(weatherData);
         return weatherData;
     }
-    saveData(data: any) {
+    saveData(data: any, city: string) {
         localStorage.setItem('weatherData', JSON.stringify(data));
+        const savedCities = localStorage.getItem('cities')
+        if (savedCities != null){
+            const parseSaveCities = JSON.parse(savedCities);
+            const isCity = parseSaveCities.includes(city)
+            if(isCity === false){
+                parseSaveCities.push(city); 
+                localStorage.setItem("cities", parseSaveCities)
+            }
+        } else {
+            localStorage.setItem("cities", JSON.stringify([city]))
+        }
+
+            
     }
     getData() {
         const data = localStorage.getItem('weatherData');
