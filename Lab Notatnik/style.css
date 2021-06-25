@@ -1,0 +1,148 @@
+body{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(77, 75, 82), transparent),rgb(236, 233, 233);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a
+#top{
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+}
+
+h1{
+    margin-left: 34%;
+    width: 30%;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+
+#AddNote{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    left: 45%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    border: 1px;
+    border-color: red;
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#AddNote:hover{
+    opacity: 50%;
+}
+
+#addNewNote{
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    background-color: grey;
+    opacity: 80%;
+    border: 1px solid black;
+    top: 30%;
+    left: 37%;
+    display: none;
+    z-index: 15;
+    
+}
+
+form{
+    position: static;
+    text-align: center;
+    padding: 5px;
+}
+
+form input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: white;
+    
+}
+
+#value{
+    min-height: 200px;
+    padding: 10px;
+}
+
+#noteContainer{
+    position: relative;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    top: 150px;
+    padding: 20px;
+    line-height: 50%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    
+}
+
+.task{
+    margin: 15px;
+    padding: 15px;
+    
+    border-radius: 20px;
+}
+
+.addPin{
+     position: relative;
+    margin-right: 10px;
+    margin-left: 80%;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.addPin:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+h4 {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+.exitButton{
+    margin-bottom: 40px;
+    transition: 0.5s;
+}
+.exitButton:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.task:first-child{
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
